@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control de Cuotas</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <h1>📋 Control de Cuotas</h1>
+    <p>12 cuotas de $92.800 COP</p>
+  </header>
+
+  <main>
+
+    <!-- Resumen -->
+    <section class="resumen">
+
+      <div class="card-resumen">
+        <h3>Total Compromiso</h3>
+        <p id="totalCompromiso">$1.113.600</p>
+      </div>
+
+
+      <div class="card-resumen">
+        <h3>Total Pagado</h3>
+        <p id="totalPagado">$0</p>
+      </div>
+
+      <div class="card-resumen">
+        <h3>Cuotas Pagadas</h3>
+        <p id="cuotasPagadas">0 / 12</p>
+      </div>
+
+      <div class="card-resumen">
+        <h3>Saldo Pendiente</h3>
+        <p id="saldoPendiente">$1.113.600</p>
+      </div>
+
+    </section>
+
+    <!-- Lista de cuotas -->
+    <section>
+
+      <h2>Mis Cuotas</h2>
+
+      <div id="contenedorCuotas">
+
+        <div class="cargando">
+
+          Cargando cuotas...
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Librería oficial de Supabase -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- Nuestro código -->
+  <script src="app.js"></script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,182 @@
+/* ===== RESET ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f6f9;
+    color:#333;
+    padding:20px;
+}
+
+/* ===== HEADER ===== */
+
+.header{
+    background:#0b4d3d;
+    color:white;
+    padding:30px;
+    border-radius:20px;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.header h1{
+    margin-bottom:10px;
+}
+
+/* ===== RESUMEN ===== */
+
+.resumen{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.card-resumen{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.card-resumen h3{
+    color:#777;
+    margin-bottom:10px;
+    font-size:14px;
+}
+
+.card-resumen p{
+    font-size:24px;
+    font-weight:bold;
+    color:#0b4d3d;
+}
+
+/* ===== TITULOS ===== */
+
+h2{
+    margin-bottom:15px;
+}
+
+/* ===== CUOTAS ===== */
+
+#contenedorCuotas{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:15px;
+}
+
+.cuota-card{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.cuota-card h3{
+    margin-bottom:10px;
+}
+
+.valor-cuota{
+    font-size:28px;
+    font-weight:bold;
+    color:#0b4d3d;
+    margin-bottom:10px;
+}
+
+.estado{
+    display:inline-block;
+    padding:5px 12px;
+    border-radius:20px;
+    margin-bottom:15px;
+    font-size:14px;
+}
+
+.pagada{
+    background:#d4edda;
+    color:#155724;
+}
+
+.pendiente{
+    background:#fff3cd;
+    color:#856404;
+}
+
+.fecha{
+    color:#666;
+    margin-bottom:15px;
+    font-size:14px;
+}
+
+/* ===== BOTONES ===== */
+
+button{
+    width:100%;
+    border:none;
+    background:#0b4d3d;
+    color:white;
+    padding:12px;
+    border-radius:10px;
+    cursor:pointer;
+    margin-top:8px;
+    font-size:14px;
+}
+
+button:hover{
+    background:#086a52;
+}
+
+/* ===== INPUT FILE ===== */
+
+input[type="file"]{
+    width:100%;
+    margin-top:10px;
+}
+
+/* ===== COMPROBANTE ===== */
+
+.comprobante-link{
+    display:block;
+    margin-top:10px;
+    text-decoration:none;
+    color:#0077cc;
+    font-weight:bold;
+}
+
+.comprobante-link:hover{
+    text-decoration:underline;
+}
+
+/* ===== CARGANDO ===== */
+
+.cargando{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:768px){
+
+    body{
+        padding:10px;
+    }
+
+    .header{
+        padding:20px;
+    }
+
+    .card-resumen p{
+        font-size:20px;
+    }
+
+}
